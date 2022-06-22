@@ -1,0 +1,87 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+}
+
+/*PARTE DEL HEADER*/
+header {
+   background-color: #2A2550;
+}
+
+.nav_header {
+   display: flex;
+}
+
+.imagen_mate {
+   width: 4vw;
+}
+
+.lista_header{
+   
+   text-decoration: none;
+   color:#E04D01;
+   width: 1VW;
+}
+
+.lista_header {
+   display: flex;
+   flex-direction: row;
+   text-emphasis: none;
+   gap: 50px;
+   list-style-type: none;
+}
+
+li {
+   text-decoration: none;
+   color: #E04D01;
+}
+
+
+/*-----------------------------------------*/
+
+
+.sobre_nosotros{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: stretch;
+
+}
+
+.imagen_principal {
+   width: 30vw;
+}
+
+
+/* seccion "FOR-MATE",al lado la imagen del chaboncito en la pc  */
+#sobre_nosotros{
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+   background-color: #251D3A;
+}
+
+.primer_titulo, .cap_recursos{
+   color: #E04D01;
+}
+
+/* Footer css */
+
+footer {
+   padding: 5px;
+   width: 100vw;
+   height: 5vw;
+   background-color: #E04D01;
+   text-align: center;
+}
+.footer_derechos{
+   padding: 5px;
+}
