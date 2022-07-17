@@ -89,3 +89,22 @@ footer {
     width: 25vmax;
 }
 /* ---------------------------------------------------- */
+
+/*---Responsive Web Design - --- DANIEL POSTA  */
+@media only screen and (max-width: 400px) {
+    #sobre_nosotros {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #251d3a;
+    }
+    .imagen_principal {
+        height: auto;
+    }
+    .segundo_titulo {
+        color: white;
+    }
+}
+/* ---------------------------------------------------- */
