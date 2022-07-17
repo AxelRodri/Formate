@@ -1,87 +1,91 @@
 * {
-   margin: 0;
-   padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-   scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-   font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 /*PARTE DEL HEADER*/
 header {
-   background-color: #2A2550;
+    background-color: #2a2550;
 }
 
 .nav_header {
-   display: flex;
+    display: flex;
 }
 
 .imagen_mate {
-   width: 4vw;
-}
-
-.lista_header{
-   
-   text-decoration: none;
-   color:#E04D01;
-   width: 1VW;
+    width: 4vw;
 }
 
 .lista_header {
-   display: flex;
-   flex-direction: row;
-   text-emphasis: none;
-   gap: 50px;
-   list-style-type: none;
+    text-decoration: none;
+    color: #e04d01;
+    width: 1vw;
+}
+
+.lista_header {
+    display: flex;
+    flex-direction: row;
+    text-emphasis: none;
+    gap: 50px;
+    list-style-type: none;
 }
 
 li {
-   text-decoration: none;
-   color: #E04D01;
+    text-decoration: none;
+    color: #e04d01;
 }
-
 
 /*-----------------------------------------*/
 
-
-.sobre_nosotros{
+/* .sobre_nosotros{
    display: flex;
    flex-direction: row;
    justify-content: center;
    align-items: stretch;
-
-}
+} */
 
 .imagen_principal {
-   width: 30vw;
+    width: 30vw;
 }
 
-
-/* seccion "FOR-MATE",al lado la imagen del chaboncito en la pc  */
-#sobre_nosotros{
-   display:flex;
-   flex-direction: row;
-   justify-content: center;
-   background-color: #251D3A;
-}
-
-.primer_titulo, .cap_recursos{
-   color: #E04D01;
+.primer_titulo,
+.cap_recursos {
+    color: #e04d01;
 }
 
 /* Footer css */
 
 footer {
-   padding: 5px;
-   width: 100vw;
-   height: 5vw;
-   background-color: #E04D01;
-   text-align: center;
+    padding: 5px;
+    width: 100vw;
+    height: 5vw;
+    background-color: #e04d01;
+    text-align: center;
 }
-.footer_derechos{
-   padding: 5px;
+.footer_derechos {
+    padding: 5px;
 }
+
+/* DANIEL POSTA : Section id="sobre_nosotros"  */
+/* main > section = id="sore nosotros"   */
+#sobre_nosotros {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #251d3a;
+    color: white;
+}
+.imagen_principal {
+    height: 20vmax;
+    width: 25vmax;
+}
+/* ---------------------------------------------------- */
