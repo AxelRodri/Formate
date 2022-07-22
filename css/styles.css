@@ -1,6 +1,6 @@
 * {
    margin: 0;
-   padding: 0;
+   box-sizing: border-box;
 }
 
 html {
@@ -54,10 +54,7 @@ a:hover{
    text-decoration: none;
    display: block;
    font-size: 1.5em;
-}
 
-.mostrar {
-   margin-left: 0;
 }
 
 @media(min-width:1024px){
@@ -83,7 +80,6 @@ a:hover{
        transition: all 0.3s;
    }
 }
-
 /*-----------------------------------------*/
 
 
@@ -110,6 +106,9 @@ a:hover{
 
 .primer_titulo, .cap_recursos{
    color: #E04D01;
+}
+.nav-bar {
+   
 }
 
 /* Footer css */
