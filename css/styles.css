@@ -1,6 +1,6 @@
 * {
    margin: 0;
-   padding: 0;
+   box-sizing: border-box;
 }
 
 html {
@@ -12,39 +12,77 @@ body {
 }
 
 /*PARTE DEL HEADER*/
-header {
-   background-color: #2A2550;
+.nav-bar {
+   background-color: #251D3A;
+   padding: 20px;
+   display: block;
+   color: white;
+   cursor: pointer;
+   font-size: 2em;
+   width: 100%;
 }
 
-.nav_header {
-   display: flex;
+.titulo-formate{
+   padding: 2vw;
+   font-size: 35px;
+   color: white;
 }
-
-.imagen_mate {
-   width: 4vw;
-}
-
-.lista_header{
-   
-   text-decoration: none;
-   color:#E04D01;
-   width: 1VW;
-}
-
-.lista_header {
-   display: flex;
-   flex-direction: row;
-   text-emphasis: none;
-   gap: 50px;
-   list-style-type: none;
-}
-
-li {
-   text-decoration: none;
+.titulo-formate a{
+   list-style: none;
    color: #E04D01;
+   font-family: bold;
+   text-decoration: none;
+}
+a:hover{
+   color: white;
 }
 
+.lista-menu{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
 
+.menu{
+   width: 100%;
+   margin-left: -100%;
+}
+
+.lista-item{
+   color: #E04D01;
+   padding: 30px;
+   text-decoration: none;
+   display: block;
+   font-size: 1.5em;
+}
+
+.mostrar {
+   margin-left: 0;
+}
+
+@media(min-width:1024px){
+   .nav-bar{
+       display: none;
+       
+   }
+   .menu{
+       margin-left: 0;
+       background-color: #251D3A;
+       display: flex;
+       justify-content: space-evenly;
+       transition: all 0.3s;
+   }
+   .lista-menu{
+       display: flex;
+   }
+   #abrirMenu{
+       margin-left: 0;
+       background-color: #251D3A;
+       display: flex;
+       justify-content: space-evenly;
+       transition: all 0.3s;
+   }
+}
 /*-----------------------------------------*/
 
 
@@ -71,6 +109,9 @@ li {
 
 .primer_titulo, .cap_recursos{
    color: #E04D01;
+}
+.nav-bar {
+   
 }
 
 /* Footer css */
