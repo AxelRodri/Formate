@@ -1,18 +1,4 @@
-@media (max-width: 650px) {
-   *{
-
-   }
-}
-
 * {
-   margin: 0;
-   box-sizing: border-box;
-}
-
-html {
-   scroll-behavior: smooth;
-}
-
 body {
    font-family: 'Roboto', sans-serif;
    margin: 0;
