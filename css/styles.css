@@ -1,108 +1,77 @@
-
-:root {
-   --orange: #E04D01;
-   --blueDark: #2A2550;
-   --darkerBlue: #251D3A; 
-}
-
-
 * {
-   margin: 0;
-   box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.nav-bar {
+    background-color: #251D3A;
+    padding: 20px;
+    display: block;
+    color: white;
+    cursor: pointer;
+    font-size: 2em;
+    width: 100%;
 }
 
-html {
-   scroll-behavior: smooth;
+.titulo-formate{
+    padding: 2vw;
+    font-size: 35px;
+    color: white;
+}
+.titulo-formate a{
+    list-style: none;
+    color: #E04D01;
+    font-family: bold;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
 }
 
-body {
-   font-family: 'Roboto', sans-serif;
+.lista-menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-/*PARTE DEL HEADER*/
-header {
-   background-color: var(--blueDark);
+.menu{
+    width: 100%;
+    margin-left: -100%;
 }
 
-.nav_header {
-   display: flex;
-   justify-content: space-between;
-   padding: 8px 16px;
+.lista-item{
+    color: #E04D01;
+    padding: 30px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5em;
 }
 
-.imagen_mate {
-   height: 40px;
-}
-
-.lista_header{
-   text-decoration: none;
-   color:var(--orange);
-   display: flex;
-   text-emphasis: none;
-   gap: 50px;
-   list-style-type: none;
-}
-
-li {
-   text-decoration: none;
-   color: var(--orange);
+.mostrar {
+    margin-left: 0;
 }
 
 @media(min-width:1024px){
-   .nav-bar{
-       display: none;
-       
-   }
-   .menu{
-       margin-left: 0;
-       background-color: #251D3A;
-       display: flex;
-       justify-content: space-evenly;
-       transition: all 0.3s;
-   }
-   .lista-menu{
-       display: flex;
-   }
-   #abrirMenu{
-       margin-left: 0;
-       background-color: #251D3A;
-       display: flex;
-       justify-content: space-evenly;
-       transition: all 0.3s;
-   }
-}
-/*-----------------------------------------*/
-
-
-.sobre_nosotros{
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: stretch;
-
-}
-
-.imagen_principal {
-   width: 30vw;
-}
-
-
-/* seccion "FOR-MATE",al lado la imagen del chaboncito en la pc  */
-#sobre_nosotros{
-   display:flex;
-   flex-direction: row;
-   justify-content: center;
-   background-color: var(--darkerBlue);
-}
-
-.primer_titulo, .cap_recursos{
-   color: var(--orange);
-}
-
-/* Footer css */
-
-footer {
-   padding: 5px;
-   background-color: var(--orange);
-   text-align: center;
+    .nav-bar{
+        display: none;
+        
+    }
+    .menu{
+        margin-left: 0;
+        background-color: #251D3A;
+        display: flex;
+        justify-content: space-evenly;
+        transition: all 0.3s;
+    }
+    .lista-menu{
+        display: flex;
+    }
+    #abrirMenu{
+        margin-left: 0;
+        background-color: #251D3A;
+        display: flex;
+        justify-content: space-evenly;
+        transition: all 0.3s;
+    }
 }
