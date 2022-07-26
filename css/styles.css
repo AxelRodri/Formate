@@ -1,5 +1,13 @@
+:root {
+   --orange: #E04D01;
+   --blue: #2A2550;
+   --darkerBlue: #251D3A;
+   --white: #fff;
+}
+
 * {
    margin: 0;
+   padding: 0;
    box-sizing: border-box;
 }
 
@@ -9,11 +17,13 @@ html {
 
 body {
    font-family: 'Roboto', sans-serif;
+   background-color: var(--darkerBlue);
+   color: var(--white);
 }
 
 /*PARTE DEL HEADER*/
 .nav-bar {
-   background-color: #251D3A;
+   background-color: var(--blue);
    padding: 20px;
    display: block;
    color: white;
@@ -29,12 +39,12 @@ body {
 }
 .titulo-formate a{
    list-style: none;
-   color: #E04D01;
+   color: var(--orange);
    font-family: bold;
    text-decoration: none;
 }
 a:hover{
-   color: white;
+   color: var(--white);
 }
 
 .lista-menu{
@@ -49,7 +59,7 @@ a:hover{
 }
 
 .lista-item{
-   color: #E04D01;
+   color: var(--orange);
    padding: 30px;
    text-decoration: none;
    display: block;
@@ -59,8 +69,7 @@ a:hover{
 
 @media(min-width:1024px){
    .nav-bar{
-       display: none;
-       
+       display: hidden;
    }
    .menu{
        margin-left: 0;
@@ -105,21 +114,28 @@ a:hover{
 }
 
 .primer_titulo, .cap_recursos{
-   color: #E04D01;
+   color: var(--orange);
 }
-.nav-bar {
-   
+
+/* Recursos css */
+
+.subTitle {
+   color: var(--orange);
 }
+
+
+
+
 
 /* Footer css */
 
 footer {
-   padding: 5px;
-   width: 100vw;
-   height: 5vw;
-   background-color: #E04D01;
+   padding: 8px;
+   background-color: var(--orange);
    text-align: center;
+   color: var(--white);
 }
-.footer_derechos{
-   padding: 5px;
+
+footer p {
+   margin: 0;
 }
