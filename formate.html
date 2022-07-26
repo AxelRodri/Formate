@@ -5,21 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formate</title>
- 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formate</title>
     <script src="https://kit.fontawesome.com/a62c2273c9.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
@@ -28,21 +13,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="nav-header">   
-        <img src="img/te-de-mate.png" alt="imagen de un mate" class="mate-formate">
-        <ul class="enlaces-menu" id="menu">
-            <li class="lista-menu">  <a href="#sobre_nosotros" class="link-menu">Sobre nosotros</a> </li>
-            <li class="lista-menu">  <a href="#cap_becas" class="link-menu">Cursos</a>  </li>
-            <li class="lista-menu">  <a href="#cap_recursos" class="link-menu">Recursos</a>  </li>
+    <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"> Menu</i></span>
+    <nav class="menu" id="menu">   
+        <!--<img src="img/te-de-mate.png" alt="imagen de un mate" class="imagen_mate">   -->
+        <h1 class="titulo-formate"><a href="#">Formate</a></h1>
+        <ul class="lista-menu" id="abrirMenu">
+            <li class="menu--item">  <a href="#sobre_nosotros" class="lista-item">Sobre nosotros</a> </li>
+            <li class="menu--item">  <a href="#cap_becas" class="lista-item">Cursos</a>  </li>
+            <li class="menu--item">  <a href="#cap_recursos" class="lista-item">Recursos</a>  </li>
         </ul>
-        <button class="btnMenu" id="btnMenu">
-            <span class="nav-bar"></span>
-            <span class="nav-bar"></span>
-            <span class="nav-bar"></span>
-        </button>
-        <script src="formate.js"></script>
      </nav>
-
     <main>
         <section id="sobre_nosotros">
             <div>
@@ -54,6 +34,32 @@
         
         <section id="cap_becas">
             <h2>Capacitaciones y Becas</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
         </section>
 
         <section id="cap_recursos">
@@ -166,8 +172,12 @@
     
 
     <footer>
-        <p class="footer_pescar">©Pescar 2022</p>
-        <p class="footer_derechos">Todos los derechos reservados</p>
+        <h4 class="footer_pescar">©Pescar 2022</h4>
+        <h5 class="footer_derechos">Todos los derechos reservados</h5>
     </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="js/formate.js"></script>
 </body>
 </html>
