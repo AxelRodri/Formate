@@ -1,77 +1,170 @@
 * {
+    margin: 0;
     box-sizing: border-box;
+ }
+ 
+ html {
+    scroll-behavior: smooth;
+ }
+ 
+body {
+   font-family: 'Roboto', sans-serif;
+   margin: 0;
+   padding: 0;
+   line-height: 1.6;
 }
-body{
-    margin: 0;
-}
-.nav-bar {
-    background-color: #251D3A;
-    padding: 20px;
-    display: block;
-    color: white;
-    cursor: pointer;
-    font-size: 2em;
-    width: 100%;
-}
-
-.titulo-formate{
-    padding: 2vw;
-    font-size: 35px;
-    color: white;
-}
-.titulo-formate a{
-    list-style: none;
-    color: #E04D01;
-    font-family: bold;
-    text-decoration: none;
-}
-a:hover{
-    color: white;
+   *, *::before, *::after {
+      box-sizing: inherit;
 }
 
-.lista-menu{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/*<<<<<<< HEAD/
+/COMIENZO DEL NAVEGADOR*/  
+  .mate-formate{
+      width: 50px;
+      height: 50px;
+  }
+  .nav-header{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      min-height: 5vw;
+      background-color:#251D3A ;
+  }
+  
+  .btnMenu{
+      display: none;
+      border: none;
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      color: #E04D01;
+      font-size: 3.2vw;
+  }
+  
+  .enlaces-menu{
+      display: flex;
+      padding: 0;
+      gap: 50px;
+  }
+  a{
+      list-style-type: none;
+  }
+  
+  .btnMenu .nav-bar{
+      display: block;
+      background-color: white;
+      height: 3px;
+      width: 28px;
+      margin: 9px 15px 0px 0px;
+      border-radius: 2px;
+  }
+  
+  .lista-menu{
+      list-style-type: none;
+      transition: 0.8s;
+      margin: 20px 0px 0px 20px;
+      padding: 5px;
+  }
+  
+  .lista-menu .link-menu{
+      text-decoration: none;
+      color: #E04D01;
+      list-style: none;
+      font-size: 2.3vw;
+      font-weight: 600;
+      padding: 50px 0px 0px 0px;
+  }
+  
+  .enlaces-menu .lista-menu:hover{
+      border-radius: 20px;
+      background-color:#eae5f8;
+      color: white;
+  }
+  
+  /*Dispositivos moviles*/
+  
+  @media(max-width:768px){
+      body{
+          overflow: hidden;
+      }
+      .mate-formate{
+          margin:-18px 0px -10px 20px;
+      }
+      .btnMenu{
+          display: block;
+          position: absolute;
+          top: 15px;
+          right: 25px;
+      }
+      .nav-header{
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 25px 0;
+      }
+      .enlaces-menu{
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          height: 92vw;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          display: none;
+      }
+  
+      .lista-menu .link-menu{
+          font-size: 4vw;
+      }
+  
+      .enlaces-menu .lista-menu{
+          width: 100%;
+          text-align: center;
+          padding: 20px;
+      }
+  }
+  
+  .enlaces-menu.activado{
+      display: flex;
+  }
+  
+  @keyframes muestraMenu{
+      from{opacity: 0;}
+      to{opacity: 1;}
+  }
+  .enlaces-menu.activado{
+      display: flex;
+      animation:muestraMenu 1.5s ease-in-out both;
 }
-
-.menu{
-    width: 100%;
-    margin-left: -100%;
-}
-
-.lista-item{
-    color: #E04D01;
-    padding: 30px;
-    text-decoration: none;
-    display: block;
-    font-size: 1.5em;
-}
+/*/-----------------------------------------*/
 
 .mostrar {
     margin-left: 0;
 }
 
-@media(min-width:1024px){
-    .nav-bar{
-        display: none;
-        
-    }
-    .menu{
-        margin-left: 0;
-        background-color: #251D3A;
-        display: flex;
-        justify-content: space-evenly;
-        transition: all 0.3s;
-    }
-    .lista-menu{
-        display: flex;
-    }
-    #abrirMenu{
-        margin-left: 0;
-        background-color: #251D3A;
-        display: flex;
-        justify-content: space-evenly;
-        transition: all 0.3s;
-    }
+.imagen_principal {
+   width: 30vw;
 }
+
+
+/* seccion "FOR-MATE",al lado la imagen del chaboncito en la pc  */
+#sobre_nosotros{
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+   background-color: #251D3A;
+}
+
+.primer_titulo, .cap_recursos{
+   color: #E04D01;
+}
+
+/* Footer css */
+
+footer {
+   padding: 5px;
+   width: 100vw;
+   height: 5vw;
+   background-color: #E04D01;
+   text-align: center;
+}
+/**/
