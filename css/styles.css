@@ -1,3 +1,11 @@
+
+:root {
+   --orange: #E04D01;
+   --blueDark: #2A2550;
+   --darkerBlue: #251D3A; 
+}
+
+
 * {
    margin: 0;
    padding: 0;
@@ -13,27 +21,23 @@ body {
 
 /*PARTE DEL HEADER*/
 header {
-   background-color: #2A2550;
+   background-color: var(--blueDark);
 }
 
 .nav_header {
    display: flex;
+   justify-content: space-between;
+   padding: 8px 16px;
 }
 
 .imagen_mate {
-   width: 4vw;
+   height: 40px;
 }
 
 .lista_header{
-   
    text-decoration: none;
-   color:#E04D01;
-   width: 1VW;
-}
-
-.lista_header {
+   color:var(--orange);
    display: flex;
-   flex-direction: row;
    text-emphasis: none;
    gap: 50px;
    list-style-type: none;
@@ -41,7 +45,7 @@ header {
 
 li {
    text-decoration: none;
-   color: #E04D01;
+   color: var(--orange);
 }
 
 
@@ -66,22 +70,17 @@ li {
    display:flex;
    flex-direction: row;
    justify-content: center;
-   background-color: #251D3A;
+   background-color: var(--darkerBlue);
 }
 
 .primer_titulo, .cap_recursos{
-   color: #E04D01;
+   color: var(--orange);
 }
 
 /* Footer css */
 
 footer {
    padding: 5px;
-   width: 100vw;
-   height: 5vw;
-   background-color: #E04D01;
+   background-color: var(--orange);
    text-align: center;
-}
-.footer_derechos{
-   padding: 5px;
 }
