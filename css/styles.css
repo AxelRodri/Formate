@@ -8,7 +8,7 @@
 
 * {
    margin: 0;
-   padding: 0;
+   box-sizing: border-box;
 }
 
 html {
@@ -48,7 +48,29 @@ li {
    color: var(--orange);
 }
 
-
+@media(min-width:1024px){
+   .nav-bar{
+       display: none;
+       
+   }
+   .menu{
+       margin-left: 0;
+       background-color: #251D3A;
+       display: flex;
+       justify-content: space-evenly;
+       transition: all 0.3s;
+   }
+   .lista-menu{
+       display: flex;
+   }
+   #abrirMenu{
+       margin-left: 0;
+       background-color: #251D3A;
+       display: flex;
+       justify-content: space-evenly;
+       transition: all 0.3s;
+   }
+}
 /*-----------------------------------------*/
 
 
