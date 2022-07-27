@@ -119,13 +119,65 @@ a:hover{
 
 /* Recursos css */
 
-.subTitle {
-   color: var(--orange);
+.parentContainer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
+.containerList {
+   width: 80%;
+   background-color: var(--blue);
+   margin: 18px 0;
+   border-radius: 12px;
+   padding: 12px;
+}
 
+.subTitle {
+   color: var(--orange);
+   font-size: 2em;
+   text-align: center;
+}
 
+.titleList{
+   color: var(--orange);
+   font-size: 1.30em;
+}
 
+ul li {
+   padding: 4px;
+}
+
+ul li a {
+   color: var(--white);
+   text-decoration: none;
+}
+
+@media (min-width:500px) {
+  .parentContainer {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   place-items: center;
+   margin: 20px;
+  }
+
+  .containerList {
+   width: 75%;
+  }
+}
+
+@media (min-width:800px) {
+   .parentContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    margin: 30px;
+   }
+ 
+   .containerList {
+    width: 90%;
+   }
+ }
 
 /* Footer css */
 
