@@ -22,73 +22,70 @@ body {
 }
 
 /*PARTE DEL HEADER*/
-.nav-bar {
-   background-color: var(--blue);
-   padding: 20px;
-   display: block;
-   color: white;
-   cursor: pointer;
-   font-size: 2em;
-   width: 100%;
+.mate-formate{
+   width: 50px;
+   height: 50px;
+}
+.nav-header{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   min-height: 5vw;
+   background-color:#251D3A ;
 }
 
-.titulo-formate{
-   padding: 2vw;
-   font-size: 35px;
-   color: white;
-}
-.titulo-formate a{
-   list-style: none;
-   color: var(--orange);
-   font-family: bold;
-   text-decoration: none;
-}
-a:hover{
-   color: var(--white);
-}
-
-.lista-menu{
-   list-style: none;
+.btnMenu{
+   display: none;
+   border: none;
    margin: 0;
    padding: 0;
+   background-color: transparent;
+   color: #E04D01;
+   font-size: 3.2vw;
 }
 
-.menu{
-   width: 100%;
-   margin-left: -100%;
+.enlaces-menu{
+   display: flex;
+   padding: 0;
+   gap: 50px;
+}
+a{
+   list-style-type: none;
 }
 
-.lista-item{
-   color: var(--orange);
-   padding: 30px;
-   text-decoration: none;
+.btnMenu .nav-bar{
    display: block;
-   font-size: 1.5em;
-
+   background-color: white;
+   height: 3px;
+   width: 28px;
+   margin: 9px 15px 0px 0px;
+   border-radius: 2px;
+}
+.lista-menu{
+   list-style-type: none;
+   transition: 0.8s;
+   margin: 20px 0px 0px 20px;
+   padding: 5px;
 }
 
-@media(min-width:1024px){
-   .nav-bar{
-       display: hidden;
-   }
-   .menu{
-       margin-left: 0;
-       background-color: #251D3A;
-       display: flex;
-       justify-content: space-evenly;
-       transition: all 0.3s;
-   }
-   .lista-menu{
-       display: flex;
-   }
-   #abrirMenu{
-       margin-left: 0;
-       background-color: #251D3A;
-       display: flex;
-       justify-content: space-evenly;
-       transition: all 0.3s;
-   }
+.lista-menu .link-menu{
+   text-decoration: none;
+   color: #E04D01;
+   list-style: none;
+   font-size: 2.3vw;
+   font-weight: 600;
+   padding: 50px 0px 0px 0px;
 }
+
+.enlaces-menu .lista-menu:hover{
+   border-radius: 20px;
+   background-color:#eae5f8;
+   color: white;
+}
+
+/*Dispositivos moviles*/
+
+
 /*-----------------------------------------*/
 
 
@@ -190,4 +187,56 @@ footer {
 
 footer p {
    margin: 0;
+}
+
+@media(max-width:768px){
+   body{
+       overflow: hidden;
+   }
+   .mate-formate{
+       margin:-18px 0px -10px 20px;
+   }
+   .btnMenu{
+       display: block;
+       position: absolute;
+       top: 15px;
+       right: 25px;
+   }
+   .nav-header{
+       flex-direction: column;
+       align-items: flex-start;
+       padding: 25px 0;
+   }
+   .enlaces-menu{
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+       height: 92vw;
+       margin: 0;
+       padding: 0;
+       width: 100%;
+       display: none;
+   }
+
+   .lista-menu .link-menu{
+       font-size: 4vw;
+   }
+
+   .enlaces-menu .lista-menu{
+       width: 100%;
+       text-align: center;
+       padding: 20px;
+   }
+
+.enlaces-menu.activado{
+   display: flex;
+}
+
+@keyframes muestraMenu{
+   from{opacity: 0;}
+   to{opacity: 1;}
+}
+.enlaces-menu.activado{
+   display: flex;
+   animation:muestraMenu 1.5s ease-in-out both;
 }
