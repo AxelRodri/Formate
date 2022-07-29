@@ -13,15 +13,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"> Menu</i></span>
-    <nav class="menu" id="menu">   
-        <!--<img src="img/te-de-mate.png" alt="imagen de un mate" class="imagen_mate">   -->
-        <h1 class="titulo-formate"><a href="#">Formate</a></h1>
-        <ul class="lista-menu" id="abrirMenu">
-            <li class="menu--item">  <a href="#sobre_nosotros" class="lista-item">Sobre nosotros</a> </li>
-            <li class="menu--item">  <a href="#cap_becas" class="lista-item">Cursos</a>  </li>
-            <li class="menu--item">  <a href="#cap_recursos" class="lista-item">Recursos</a>  </li>
+    <nav class="nav-header">   
+        <img src="img/te-de-mate.png" alt="imagen de un mate" class="mate-formate">
+        <ul class="enlaces-menu" id="menu">
+            <li class="lista-menu">  <a href="#sobre_nosotros" class="link-menu">Sobre nosotros</a> </li>
+            <li class="lista-menu">  <a href="#cap_becas" class="link-menu">Cursos</a>  </li>
+            <li class="lista-menu">  <a href="#cap_recursos" class="link-menu">Recursos</a>  </li>
         </ul>
+        <button class="btnMenu" id="btnMenu">
+            <span class="nav-bar"></span>
+            <span class="nav-bar"></span>
+            <span class="nav-bar"></span>
+        </button>
+        <script src="js/formate.js"></script>
      </nav>
     <main>
         <section id="sobre_nosotros">
@@ -33,138 +37,114 @@
         </section>
         
         <section id="cap_becas">
-            <h2>Capacitaciones y Becas</h2>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Siguiente</span>
-                </button>
-              </div>
+            <h2 class="subTitle">Capacitaciones y Becas</h2>
         </section>
-
+        
         <section id="cap_recursos">
-            <h2>Recursos</h2>
-            <div>
-                <h3>Canales de Youtube</h3>
-                <ul>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h3>Repos Github</h3>
-                <ul>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h3>Libros</h3>
-                <ul>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h3>Herramientas</h3>
-                <ul>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h3>Prácticas</h3>
-                <ul>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h3>Apuntes</h3>
-                <ul>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                    <li>
-                        <a></a>
-                    </li>
-                </ul>
+            <h2 class="subTitle">Recursos</h2>
+            <div class="parentContainer">
+                <div class="containerList">
+                    <h3 class="titleList">🎥 Canales de Youtube :</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.youtube.com/c/midudev" target="_blank">MiduDev</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/c/Programaci%C3%B3nAccesible" target="_blank">Programación accesible</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/c/Inform%C3%A1ticaDP" target="_blank">Informática DP</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/c/FernandoHerreraCr/videos" target="_blank">Fernando Herrera</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="containerList">
+                    <h3 class="titleList">📂 Repos Github :</h3>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/public-apis/public-apis" target="_blank">APIS públicas</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/andersontr15/clean-code-javascript-es" target="_blank">Clean code JS</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/florinpop17/app-ideas" target="_blank">App ideas</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/trekhleb/javascript-algorithms" target="_blank">Algorítmos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="containerList">
+                    <h3 class="titleList">📚 Libros :</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.digitalocean.com/community/books/how-to-code-in-react-js-ebook" target="_blank">Como codear en React.JS</a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/drive/folders/1yLOFyAAwuuBivvQnNc3kKrcB09af37de" target="_blank">Libros variados de programación</a>
+                        </li>
+                        <li>
+                            <a href="https://eloquentjs-es.thedojo.mx/" target="_blank">Elocuent Javascript</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-langs.md#javascript" target="_blank">Repo Github con libros de programación</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="containerList">
+                    <h3 class="titleList">🧰 Herramientas :</h3>
+                    <ul>
+                        <li>
+                            <a href="https://webgradients.com/" target="_blank">Generador de gradientes</a>
+                        </li>
+                        <li>
+                            <a href="https://coolors.co/" target="_blank">Generador de paletas de colores</a>
+                        </li>
+                        <li>
+                            <a href="https://michalsnik.github.io/aos/" target="_blank">Libería de animaciones</a>
+                        </li>
+                        <li>
+                            <a href="https://www.flaticon.es/" target="_blank">Libería de iconos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="containerList">
+                    <h3 class="titleList">✍️ Prácticas :</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.codechef.com/" target="_blank">Codechef</a>
+                        </li>
+                        <li>
+                            <a href="https://www.codewars.com/" target="_blank">CodeWars</a>
+                        </li>
+                        <li>
+                            <a href="https://www.coderbyte.com/" target="_blank">CodeByte</a>
+                        </li>
+                        <li>
+                            <a href="https://www.frontendmentor.io/" target="_blank">FrontendMentor</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="containerList">
+                    <h3 class="titleList">📄 Apuntes :</h3>
+                    <ul>
+                        <li>
+                            <a href="https://losapuntesdemajo.vercel.app/" target="_blank">Apuntes de Majo</a>
+                        </li>
+                        <li>
+                            <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Markdown cheatsheet</a>
+                        </li>
+                        <li>
+                            <a href="https://docs.emmet.io/cheat-sheet/" target="_blank">Emmet cheatsheet</a>
+                        </li>
+                        <li>
+                            <a href="https://i.redd.it/3rzo2tatfns21.png" target="_blank">Flexbox cheatsheet</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -172,8 +152,8 @@
     
 
     <footer>
-        <h4 class="footer_pescar">©Pescar 2022</h4>
-        <h5 class="footer_derechos">Todos los derechos reservados</h5>
+        <p>©Pescar 2022 🎣</p>
+        <p>Todos los derechos reservados</p>
     </footer>
     
 
