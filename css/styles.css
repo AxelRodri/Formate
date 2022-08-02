@@ -140,10 +140,10 @@ a{
    height: 150px;
    object-fit: cover;
  }
- 
- .slideHorizontal::-webkit-scrollbar {
-   display: none;
- }
+.slideHorizontal{
+   overflow-x: scroll;
+   overflow-y: hidden;
+}
 
 /* Recursos css */
 
