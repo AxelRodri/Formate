@@ -7,7 +7,6 @@
 
 * {
    margin: 0;
-   padding: 0;
    box-sizing: border-box;
 }
 
@@ -23,15 +22,15 @@ body {
 
 /*PARTE DEL HEADER*/
 .mate-formate{
-   width: 50px;
-   height: 50px;
+   width: 40px;
+   height: 40px;
 }
 .nav-header{
    display: flex;
    align-items: center;
-   justify-content: space-around;
-   min-height: 5vw;
-   background-color:#251D3A ;
+   justify-content: space-between;
+   background-color:var(--blue) ;
+   padding: 10px 40px;
 }
 
 .btnMenu{
@@ -40,22 +39,23 @@ body {
    margin: 0;
    padding: 0;
    background-color: transparent;
-   color: #E04D01;
-   font-size: 3.2vw;
+   color: var(--orange);
+   font-size: 2.5em;
 }
 
 .enlaces-menu{
    display: flex;
-   padding: 0;
-   gap: 50px;
+   padding: 0px;
+   margin: 0;
 }
+
 a{
    list-style-type: none;
 }
 
 .btnMenu .nav-bar{
    display: block;
-   background-color: white;
+   background-color: var(--white);
    height: 3px;
    width: 28px;
    margin: 9px 15px 0px 0px;
@@ -63,56 +63,87 @@ a{
 }
 .lista-menu{
    list-style-type: none;
-   transition: 0.8s;
-   margin: 20px 0px 0px 20px;
-   padding: 5px;
+   padding: 0px 12px;
 }
 
 .lista-menu .link-menu{
    text-decoration: none;
-   color: #E04D01;
+   color: var(--orange);
    list-style: none;
-   font-size: 2.3vw;
-   font-weight: 600;
-   padding: 50px 0px 0px 0px;
+   font-size: 1.7em;
+   font-weight: 500;
 }
 
 .enlaces-menu .lista-menu:hover{
-   border-radius: 20px;
-   background-color:#eae5f8;
-   color: white;
+   text-decoration: underline;
+   color: var(--orange);
 }
 
-/*Dispositivos moviles*/
+/* Header*/
 
-
-/*-----------------------------------------*/
-
-
-.sobre_nosotros{
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: stretch;
-
+#sobre_nosotros{
+   display:flex;
+   height: 40vh;
+   justify-content: space-evenly;
+   align-items: center;
 }
 
 .imagen_principal {
-   width: 30vw;
+   height: 50%;
 }
 
-
-/* seccion "FOR-MATE",al lado la imagen del chaboncito en la pc  */
-#sobre_nosotros{
-   display:flex;
-   flex-direction: row;
-   justify-content: center;
-   background-color: #251D3A;
-}
-
-.primer_titulo, .cap_recursos{
+.title {
    color: var(--orange);
+   font-size: 2.5em;
+   text-align: center;
 }
+
+/* Slider cursos */
+
+#cap_becas {
+   margin: 20px;
+}
+
+#cap_becas h2 {
+   margin-bottom: 12px;
+}
+
+.calendario {
+   height: 200px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ .tituloCalendario {
+   font-size: 16px;
+   text-transform: uppercase;
+   margin: 1.25rem;
+   text-align: center;
+ }
+ 
+ .slideHorizontal {
+   display: block;
+   width: 100%;
+   overflow-x: scroll;
+   padding: 10px;
+ }
+ .slideContainer {
+   display: block;
+   white-space: nowrap;
+ }
+ .item {
+   display: inline-block;
+   margin: 5px;
+ }
+ .item img {
+   width: 225px;
+   height: 150px;
+   object-fit: cover;
+ }
+ 
+ .slideHorizontal::-webkit-scrollbar {
+   display: none;
+ }
 
 /* Recursos css */
 
@@ -161,6 +192,14 @@ ul li a {
   .containerList {
    width: 75%;
   }
+
+  .imagen_principal {
+   height: 70%;
+}
+
+#sobre_nosotros {
+   height: 60vh;
+}
 }
 
 @media (min-width:800px) {
@@ -174,6 +213,7 @@ ul li a {
    .containerList {
     width: 90%;
    }
+
  }
 
 /* Footer css */
@@ -189,7 +229,7 @@ footer p {
    margin: 0;
 }
 
-@media(max-width:768px){
+@media(max-width:800px){
    body{
        overflow-x: hidden;
    }
@@ -199,7 +239,7 @@ footer p {
    .btnMenu{
        display: block;
        position: absolute;
-       top: 15px;
+       top: 8px;
        right: 25px;
    }
    .nav-header{
@@ -209,9 +249,6 @@ footer p {
    }
    .enlaces-menu{
        flex-direction: column;
-       justify-content: space-around;
-       align-items: center;
-       height: 92vw;
        margin: 0;
        padding: 0;
        width: 100%;
@@ -219,7 +256,7 @@ footer p {
    }
 
    .lista-menu .link-menu{
-       font-size: 4vw;
+       font-size: 1.25em;
    }
 
    .enlaces-menu .lista-menu{
@@ -239,4 +276,11 @@ footer p {
 .enlaces-menu.activado{
    display: flex;
    animation:muestraMenu 1.5s ease-in-out both;
+}
+
+#sobre_nosotros{
+   flex-direction: column-reverse;
+}
+
+
 }
