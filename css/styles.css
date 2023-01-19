@@ -109,7 +109,7 @@ a{
 }
 
 .calendario {
-   height: 200px;
+   height: 50%;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -120,6 +120,7 @@ a{
    margin: 1.25rem;
    text-align: center;
  }
+ /*
  
  .slideHorizontal {
    display: block;
@@ -127,18 +128,22 @@ a{
    overflow-x: scroll;
    padding: 10px;
  }
+ */
  .slideContainer {
    display: block;
    white-space: nowrap;
- }
+   width: 800px;
+}
+ 
  .item {
    display: inline-block;
    margin: 5px;
+   width: 50%;
  }
+ 
  .item img {
-   width: 225px;
-   height: 150px;
-   object-fit: cover;
+   width: 600%;
+   height: 600px;
  }
 .slideHorizontal{
    overflow-x: scroll;
