@@ -264,6 +264,7 @@ footer p {
    }
    .slideContainer{
       width: auto;
+      height: 10%;
    }
 
    .enlaces-menu .lista-menu{
@@ -279,9 +280,17 @@ footer p {
    display: flex;
    }
    .imagenCapacitaciones{
-      width: 0px;
+      border: 3px solid #E04D01;
+      width: 100%;
    }
-
+   .item{
+      
+   }
+   .slideContainer{
+      width: 80vw;
+      height: 65vh;
+      gap: 500px;
+   }
    @keyframes muestraMenu{
    from{opacity: 0;}
    to{opacity: 1;}
