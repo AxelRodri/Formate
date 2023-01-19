@@ -113,38 +113,38 @@ a{
    display: flex;
    flex-direction: column;
    align-items: center;
- }
- .tituloCalendario {
+}
+.tituloCalendario {
    font-size: 16px;
    text-transform: uppercase;
    margin: 1.25rem;
    text-align: center;
- }
- /*
- 
- .slideHorizontal {
+}
+/*
+
+.slideHorizontal {
    display: block;
    width: 100%;
    overflow-x: scroll;
    padding: 10px;
- }
+}
  */
- .slideContainer {
+.slideContainer {
    display: block;
    white-space: nowrap;
    width: 800px;
 }
- 
- .item {
+
+.item {
    display: inline-block;
    margin: 5px;
    width: 50%;
- }
- 
- .item img {
+}
+
+.item img {
    width: 600%;
    height: 600px;
- }
+}
 .slideHorizontal{
    overflow-x: scroll;
    overflow-y: hidden;
@@ -187,18 +187,18 @@ ul li a {
 }
 
 @media (min-width:500px) {
-  .parentContainer {
+   .parentContainer {
    display: grid;
    grid-template-columns: 1fr 1fr;
    place-items: center;
    margin: 20px;
-  }
+   }
 
-  .containerList {
+   .containerList {
    width: 75%;
-  }
+   }
 
-  .imagen_principal {
+   .imagen_principal {
    height: 70%;
 }
 
@@ -209,17 +209,16 @@ ul li a {
 
 @media (min-width:800px) {
    .parentContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
-    margin: 30px;
-   }
- 
-   .containerList {
-    width: 90%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   place-items: center;
+   margin: 30px;
    }
 
- }
+   .containerList {
+   width: 90%;
+   }
+}
 
 /* Footer css */
 
@@ -236,56 +235,65 @@ footer p {
 
 @media(max-width:800px){
    body{
-       overflow-x: hidden;
+      overflow-x: hidden;
    }
    .mate-formate{
-       margin:-18px 0px -10px 20px;
+      margin:-18px 0px -10px 20px;
    }
    .btnMenu{
-       display: block;
-       position: absolute;
-       top: 8px;
-       right: 25px;
+      display: block;
+      position: absolute;
+      top: 1%;
+      right: 6%;
    }
    .nav-header{
-       flex-direction: column;
-       align-items: flex-start;
-       padding: 25px 0;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 5% 0;
    }
    .enlaces-menu{
-       flex-direction: column;
-       margin: 0;
-       padding: 0;
-       width: 100%;
-       display: none;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: none;
    }
 
    .lista-menu .link-menu{
-       font-size: 1.25em;
+      font-size: 1.25em;
+   }
+   .slideContainer{
+      width: auto;
    }
 
    .enlaces-menu .lista-menu{
-       width: 100%;
-       text-align: center;
-       padding: 20px;
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+   }
+   .subTitle{
+      font-size: 1.3em;
    }
 
-.enlaces-menu.activado{
+   .enlaces-menu.activado{
    display: flex;
-}
+   }
+   .imagenCapacitaciones{
+      width: 0px;
+   }
 
-@keyframes muestraMenu{
+   @keyframes muestraMenu{
    from{opacity: 0;}
    to{opacity: 1;}
-}
-.enlaces-menu.activado{
+   }
+   .enlaces-menu.activado{
    display: flex;
    animation:muestraMenu 1.5s ease-in-out both;
-}
+   }
 
-#sobre_nosotros{
+   #sobre_nosotros{
    flex-direction: column-reverse;
-}
-
+   }
+   
 
 }
